@@ -7,6 +7,8 @@ weed - XChat based theme for irssi
 
 Weed is a very unique irssi theme for those who just don't like the default blue or the themes available.
 
+I've sliiightly modified it so every user is yellow, except for hilights and notify's, which show up as red. I've also added in the user status' (+, %, @, and !)
+
 #### README in other languages
 
 - [中文版本](https://github.com/ronilaukkarinen/weed/blob/master/README_CN.md) (thanks to [@steve-jokes](https://github.com/steve-jokes))
