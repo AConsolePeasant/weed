@@ -62,8 +62,7 @@ abstracts = {
   sb_uc_space = " ";
 
   line_start = "";
-  timestamp = "";
-  # " %_$* ";
+  timestamp = ""; # Removed time from the screen, could be annoying, if you want to enable it again, replace "" with " %_$* "
   hilight = "$*";
   error = "$*";
   channel = "$*";
@@ -82,17 +81,16 @@ abstracts = {
 
   # All of below: $0 = mode, $1 = nick
   msgnick = "$0$1- %|";
-  ownmsgnick = "{msgnick %G$0$1%K%_|}%w";
+  ownmsgnick = "{msgnick %G$0$1%K%_|}%w"; # Changes the colour of yourself to be Green. If you want this back, replace with "{msgnick %G$1%K%_|}%w"
   ownnick = "$*";
 
-  # Custom public Nick, to fit in with all yellow/notify stuff.
-  #
+  # Notifciations and Hilights should show the name in red.
 
   pubmsgnick = "{msgnick %y$0$1%K%_|}%w";
   pubnick = "$*";
-  pubmsgmenick = "%R{msgnick $0$1-%R|}%w";
+  pubmsgmenick = "%R{msgnick $0$1-%K|}%w";
   menick = "$*%n";
-  pubmsghinick = "%R{msgnick $0$1-%R|}%w";
+  pubmsghinick = "%R{msgnick $0%R$1-%K|}%w";
 
   msgchannel = ":$*";
   # $0 = nick, $1 = host
