@@ -88,9 +88,11 @@ abstracts = {
 
   pubmsgnick = "{msgnick %y$0$1%K%_|}%w";
   pubnick = "$*";
-  pubmsgmenick = "%R{msgnick $0$1-%K|}%w";
+  pubmsgmenick = "%R{msgnick $0$1-%K|}%w";  # Notify
   menick = "$*%n";
-  pubmsghinick = "%R{msgnick $0%R$1-%K|}%w";
+  
+  # $0 = hilight color, $1 = mode, $2 = nick
+  pubmsghinick = "%R{msgnick $0%R$1-%K|}%w"; # Hilight
 
   msgchannel = ":$*";
   # $0 = nick, $1 = host
